@@ -67,13 +67,13 @@ def winner():
     return check_diag()+check_row()+check_col() 
 def draw(win):
     
-    
-        for i in range(3):
-            for j in board[i]:
-                if j.isnumeric():
-                    return False
-            else:
-                return True
+
+    for i in range(3):
+        for j in board[i]:
+            if j.isnumeric():
+                return False
+        else:
+            return True
     else:
         return False
 
